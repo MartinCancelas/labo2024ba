@@ -119,7 +119,7 @@ DR_drifting_base <- function( pinputexps, metodo)
   if( -1 == (param_local <- exp_init())$resultado ) return( 0 ) # linea fija
 
 
-  param_local$meta$script <- "/src/exp_colab/1401_DR_corregir_drifting.r" # Ruta al exp colaborativo.
+  param_local$meta$script <- "/src/exp_colab/UVA/1401_DR_corregir_drifting.r" # Ruta al exp colaborativo.
 
   # valores posibles
   #  "ninguno", "rank_simple", "rank_cero_fijo", "deflacion", "estandarizar"
@@ -428,7 +428,7 @@ wf_septiembre <- function( pnombrewf )
   DT_incorporar_dataset_competencia2024()
   CA_catastrophe_base( metodo="MachineLearning")
   FEintra_manual_base()
-  DR_drifting_base(metodo="deflacion")
+  DR_drifting_base(metodo="UVA")
   FEhist_base()
   FErf_attributes_base()
   #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
@@ -436,7 +436,7 @@ wf_septiembre <- function( pnombrewf )
   ts9 <- TS_strategy_base9()
   ht <- HT_tuning_base()
 
-  fm <- FM_final_models_lightgbm( c(ht, ts9), ranks=c(1), qsemillas=11 )
+  fm <- FM_final_models_lightgbm( c(ht, ts9), ranks=c(1), qsemillas=5 )
   SC_scoring( c(fm, ts9) )
   KA_evaluate_kaggle()
 
