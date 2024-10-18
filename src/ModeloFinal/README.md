@@ -1,6 +1,5 @@
 ![Universidad Austral](https://www.austral.edu.ar/wp-content/uploads/2022/09/logo-md-austral-1.png)
-# Universidad Austral | Maestría en Ciencia de Datos
-## Laboratorio de Implementación I - 2024
+# Maestría en Ciencia de Datos | Laboratorio de Implementación I
  
 ### Instructivo de replicabilidad de la Competencia Kaggle.
 
@@ -13,3 +12,6 @@
 **4.** Una vez finalizado el workflow, y habiéndose generado todas las subidas a Kaggle, entre sus submissions, elegir para la entrega final el modelo "KA-XXXX_02_25_10500.csv".
 
 *Nota:* 'XXXX' corresponde al número de carpeta que genere la corrida del modelo en el bucket.
+
+  
+### 2024
